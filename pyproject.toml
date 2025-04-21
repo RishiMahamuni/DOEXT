@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "invoice-extraction-llm"
+version = "0.1.0"
+description = "LLM-powered invoice data extractor using Python"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = ">=3.13"
+fastapi = "^0.110.0"
+uvicorn = { extras = ["standard"], version = "^0.29.0" }
+pydantic = "^2.6.4"
+pymupdf = "^1.23.19"
+pytesseract = "^0.3.10"
+pdf2image = "^1.17.0"
+Pillow = "^10.2.0"
+openai = "^1.17.0"
+transformers = "^4.39.3"
+sentence-transformers = "^2.6.1"
+torch = ">=2.0.0"
+python-dotenv = "^1.0.1"
+ipykernel = "^6.29.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+httpx = "^0.27.0"
+pre-commit = "^3.7.0"
+
+[tool.poetry.group.mlops.dependencies]
+mlflow = "^2.11.3"
+dvc = "^3.50.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
