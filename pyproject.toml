@@ -21,7 +21,7 @@ dependencies = [
     "torch>=2.0.0",
     "python-dotenv>=1.0.1",
     "ipykernel>=6.29.4",
-    "docling",
+    "docling>=2.30.0",
 ]
 
 [project.optional-dependencies]
